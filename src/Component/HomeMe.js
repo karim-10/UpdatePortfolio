@@ -4,7 +4,7 @@ class HomeMe extends Component {
     state = { 
         img: "../../img/Abdulkarim.jpg",
         name: "Hi, mein Name ist Abdulkarim,",
-        job : "Ich bin Web-Entwikcler ",
+        job : "Ich bin Web-Entwickler ",
         title: "Ich hatte meine Weiterbildung als Web-Entwickler bei Supercode Gmbh in Düsseldorf absolviert.",
         btnText: "Zu Projekte",
     }
@@ -15,7 +15,7 @@ class HomeMe extends Component {
                     <h1>{this.state.name}</h1>
                     <h2>{this.state.job}</h2>
                     <p>{this.state.title}</p>
-                    <a href="/project">{this.state.btnText}</a>
+                    <a href="/Project">{this.state.btnText}</a>
                 </div>
                 <div>
                   <img src={this.state.img}></img>

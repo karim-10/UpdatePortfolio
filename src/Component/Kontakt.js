@@ -21,8 +21,8 @@ class Kontakt extends Component {
                 </form>
                </div>
                <div className="Social">
-                   <a href={this.state.gitUrl}><img src={this.state.gitIcon}></img></a>
-                   <a><img src={this.state.linkedinIcon}></img></a>
+                   <a href={this.state.gitUrl} target="_blank"><img src={this.state.gitIcon}></img></a>
+                   <a href="" target="_blank"><img src={this.state.linkedinIcon}></img></a>
                </div>
             </div>
          );

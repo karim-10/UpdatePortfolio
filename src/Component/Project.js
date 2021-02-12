@@ -3,10 +3,12 @@ import data from './ProjectData';
 import data1 from './ProjectData1';
 import data2 from './MongoDbData';
 import data3 from './ExpressItemData';
+import data5 from './ReactData';
 import ProjectItem from './ProjectItem';
 import ProjectItem1 from './ProjectItem1';
 import MongoDbItem from './MonogDbItem';
 import ExpressItem from './ExpressItem';
+import ReactItem from './ReactItem';
 
 
 class Project extends Component {
@@ -15,6 +17,7 @@ class Project extends Component {
         data1: data1,
         data2: data2,
         data3 :data3,
+        data5 :data5,
     }
     
     render() { 
@@ -77,7 +80,18 @@ class Project extends Component {
                     type={elt.type}
                     />
                 ))}
-              
+               {this.state.data5.map((elt)=>(
+                    <ReactItem 
+                    key={elt.i}
+                    img={elt.img}
+                    url={elt.url}
+                    ProjectName={elt.ProjectName}
+                    title={elt.title}
+                    ReactIcon={elt.ReactIcon}
+                    gitUrl={elt.gitUrl}
+                    type={elt.type}
+                    />
+                ))}
             </div>
          );
     }

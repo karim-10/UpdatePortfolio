@@ -37,7 +37,6 @@ ul li a {
   /* background-color: red; */
 }
 .HomeMe div:nth-of-type(2) {
-  background-color: gray;
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -157,7 +156,7 @@ form {
 .container {
   border-radius: 5px;
   height: 450px;
-  padding: 100px 10% 100px 10%;
+  padding: 100px 0 100px 0;
 }
 .container h1 {
   font-family: "Heebo", sans-serif;
@@ -170,6 +169,7 @@ form {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: #edf7fa;
+  padding: 0 10%;
 }
 .Social {
   display: flex;
@@ -179,4 +179,61 @@ form {
 .Social img:hover {
   transform: rotate(360deg);
   transition: 1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .HomeMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 50px 0 50px 0;
+  }
+
+  .HomeMe div:nth-of-type(1) h1,
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 30px;
+  }
+  .HomeMe div:nth-of-type(1) p {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 300px;
+    line-height: 20px;
+  }
+  .HomeMe div:nth-of-type(1) a {
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+    text-align: center;
+  }
+  .Skills {
+    height: 50vh;
+  }
+
+  .Skills h1 {
+    font-size: 30px;
+  }
+  .Skills1 h2 {
+    display: inline-block;
+  }
+  .Skills img {
+    width: 30px;
+    height: 30px;
+  }
+  .Kontakt {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .container {
+    height: 400px;
+    padding: 30px 0 50px 0;
+  }
+  .Social img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 768px) {
 }
